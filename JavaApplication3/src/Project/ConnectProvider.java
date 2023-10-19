@@ -9,5 +9,5 @@ package Project;
  * @author NThang
  */
 public class ConnectProvider {
-    
+
 }
