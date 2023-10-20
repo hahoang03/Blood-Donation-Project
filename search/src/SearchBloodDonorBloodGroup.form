@@ -37,14 +37,14 @@
               <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
               <Component id="bloodGroup" min="-2" pref="147" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="searchBar" min="-2" pref="332" max="-2" attributes="0"/>
+              <Component id="searchBar" min="-2" pref="320" max="-2" attributes="0"/>
               <EmptySpace pref="185" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
-              <Component id="print" min="-2" pref="83" max="-2" attributes="0"/>
+              <Component id="print" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="close" min="-2" pref="83" max="-2" attributes="0"/>
+              <Component id="close" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -95,6 +95,9 @@
           <Font name="Raleway" size="14" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Blood group.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Blood Group:"/>
       </Properties>
     </Component>
@@ -142,6 +145,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Raleway" size="14" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/print.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Print"/>
       </Properties>
       <Events>
@@ -152,6 +158,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Raleway" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Exit application.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Close"/>
       </Properties>

@@ -51,6 +51,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
 
         bloodGroup.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
         bloodGroup.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        bloodGroup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Blood group.png"))); // NOI18N
         bloodGroup.setText("Blood Group:");
 
         searchBar.setFont(new java.awt.Font("Raleway", 0, 14)); // NOI18N
@@ -76,6 +77,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tableBloodGroup);
 
         print.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        print.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/print.png"))); // NOI18N
         print.setText("Print");
         print.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +86,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         });
 
         close.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Exit application.png"))); // NOI18N
         close.setText("Close");
         close.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,13 +107,13 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
                 .addGap(185, 185, 185)
                 .addComponent(bloodGroup, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(searchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(searchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(185, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(150, 150, 150)
-                .addComponent(print, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(print)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(close)
                 .addGap(150, 150, 150))
         );
         layout.setVerticalGroup(
