@@ -53,6 +53,7 @@ public class SearchBloodDonorLocation extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Location.png"))); // NOI18N
         jLabel2.setText("Search Address:");
 
         jTextField1.setFont(new java.awt.Font("Raleway", 0, 14)); // NOI18N
@@ -79,6 +80,7 @@ public class SearchBloodDonorLocation extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/print.png"))); // NOI18N
         jButton1.setText("Print");
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -88,6 +90,7 @@ public class SearchBloodDonorLocation extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Exit application.png"))); // NOI18N
         jButton2.setText("Close");
         jButton2.setBorder(null);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
