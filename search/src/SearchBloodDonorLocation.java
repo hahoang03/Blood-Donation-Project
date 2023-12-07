@@ -1,6 +1,8 @@
 import javax.swing.JTable;
 import java.sql.*;
 import javax.swing.JOptionPane;
+import Project.ConnectSQL;
+import net.proteanit.sql.DbUtils;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -63,6 +65,11 @@ public class SearchBloodDonorLocation extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField1KeyReleased(evt);
             }
         });
 
@@ -157,8 +164,8 @@ public class SearchBloodDonorLocation extends javax.swing.JFrame {
         try{
             jTable1.print(JTable.PrintMode.NORMAL);
         }
-        catch(Exception e)
-        {JOptionPane.showMessageDialog(null, e);
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -166,6 +173,21 @@ public class SearchBloodDonorLocation extends javax.swing.JFrame {
         // TODO add your handling code here:
         setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+        // TODO add your handling code here:
+        String location = jTextField1.getText();
+        try{
+            Connection con = ConnectSQL.getCon();
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery("select * from donor where city like '%"+location+"%' or address like '%"+location+"%'");
+            jTable1.setAutoResizeMode(jTable1.AUTO_RESIZE_OFF);
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jTextField1KeyReleased
 
     /**
      * @param args the command line arguments

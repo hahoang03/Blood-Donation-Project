@@ -1,6 +1,8 @@
 import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
+import Project.ConnectSQL;
+import net.proteanit.sql.DbUtils;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -60,6 +62,11 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         searchBar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchBarActionPerformed(evt);
+            }
+        });
+        searchBar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchBarKeyReleased(evt);
             }
         });
 
@@ -152,8 +159,8 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         try{
             tableBloodGroup.print(JTable.PrintMode.NORMAL);
         }
-        catch(Exception e)
-        {JOptionPane.showMessageDialog(null, e);
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_printActionPerformed
 
@@ -161,6 +168,21 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         // TODO add your handling code here:
         setVisible(false);
     }//GEN-LAST:event_closeActionPerformed
+
+    private void searchBarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchBarKeyReleased
+        // TODO add your handling code here:
+        String bloodGroup = searchBar.getText();
+                try{
+            Connection con = ConnectSQL.getCon();
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery("select * from donor where bloodGroup like '%"+bloodGroup+"%'");
+            tableBloodGroup.setAutoResizeMode(tableBloodGroup.AUTO_RESIZE_OFF);
+            tableBloodGroup.setModel(DbUtils.resultSetToTableModel(rs));
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_searchBarKeyReleased
 
     /**
      * @param args the command line arguments

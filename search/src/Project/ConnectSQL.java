@@ -1,3 +1,5 @@
+package Project;
+
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 import java.sql.Connection;
@@ -15,7 +17,7 @@ import java.util.logging.Logger;
  * @author kyphuong04
  */
 public class ConnectSQL {
-    public static void main(String args[]) throws SQLException {
+    public static Connection getCon() throws SQLException{
         var server = "KYPHUONG04\\SQLEXPRESS";
         var user = "sa";
         var password = "4444";
@@ -33,5 +35,6 @@ public class ConnectSQL {
         } catch (SQLServerException ex) {
             ex.printStackTrace();
         }
+        return null;
     }
 }
