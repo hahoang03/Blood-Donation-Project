@@ -40,7 +40,6 @@ public class addNewDonor extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -53,7 +52,6 @@ public class addNewDonor extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
-        jSeparator2 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -74,7 +72,6 @@ public class addNewDonor extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Monotype Corsiva", 1, 36)); // NOI18N
         jLabel1.setText("Add New Donor");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 236, -1));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 84, 796, 10));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("New Donor ID");
@@ -83,7 +80,7 @@ public class addNewDonor extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 0, 51));
         jLabel3.setText("11");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Name");
@@ -138,7 +135,6 @@ public class addNewDonor extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 174, -1));
-        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 382, 796, 10));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/save.png"))); // NOI18N
@@ -182,7 +178,7 @@ public class addNewDonor extends javax.swing.JFrame {
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 160, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/all page background image.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -100, 990, 690));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -208,39 +204,6 @@ public class addNewDonor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        //Get all the data entered by the user
-        String DonorID=jLabel3.getText();
-        String DonorName=jTextField1.getText();
-        String DonorAge=jTextField4.getText();
-        String DonorGender=(String)jComboBox1.getSelectedItem();
-        SimpleDateFormat dFormat=new SimpleDateFormat("yyyy-MM-dd");
-        String DOB=dFormat.format(jDateChooser1.getDate());
-        String ContactNumber=jTextField3.getText();
-        String RegisterID=jTextField9.getText();
-              
-        // connect to SQL server
-        
-     
-    
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
-        
- 
-           try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
-                stmt.executeUpdate("insert into donor values('"+DonorID+"','"+DonorName+"','"+DonorGender+"','"+DonorAge+"','"+ContactNumber+"','"+DOB+"','"+RegisterID+"')");
-                JOptionPane.showMessageDialog(null,"Successfully Updated");
-                setVisible(false);
-                new addNewDonor().setVisible(true);
-                System.out.println(con.getCatalog());
-        }
-              catch(SQLException e)
-              {
-                  e.printStackTrace();
-              JOptionPane.showMessageDialog(null,e);
-              }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
@@ -255,6 +218,36 @@ public class addNewDonor extends javax.swing.JFrame {
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        //Get all the data entered by the user
+        String DonorID=jLabel3.getText();
+        String DonorName=jTextField1.getText();
+        String DonorAge=jTextField4.getText();
+        String DonorGender=(String)jComboBox1.getSelectedItem();
+        SimpleDateFormat dFormat=new SimpleDateFormat("yyyy-MM-dd");
+        String DOB=dFormat.format(jDateChooser1.getDate());
+        String ContactNumber=jTextField3.getText();
+        String RegisterID=jTextField9.getText();
+
+        // connect to SQL server
+
+        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
+
+        try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
+            stmt.executeUpdate("insert into donor values('"+DonorID+"','"+DonorName+"','"+DonorGender+"','"+DonorAge+"','"+ContactNumber+"','"+DOB+"','"+RegisterID+"')");
+            JOptionPane.showMessageDialog(null,"Successfully Updated");
+            setVisible(false);
+            new addNewDonor().setVisible(true);
+            System.out.println(con.getCatalog());
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -307,8 +300,6 @@ public class addNewDonor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
