@@ -47,16 +47,16 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         setName("SearchBloodGroup"); // NOI18N
         setUndecorated(true);
 
-        Search_Blood_Group.setFont(new java.awt.Font("Raleway", 1, 35)); // NOI18N
+        Search_Blood_Group.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
         Search_Blood_Group.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Search_Blood_Group.setText("SEARCH BLOOD DONOR (BLOOD GROUP)");
 
-        bloodGroup.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        bloodGroup.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         bloodGroup.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bloodGroup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Blood group.png"))); // NOI18N
         bloodGroup.setText("Blood Group:");
 
-        searchBar.setFont(new java.awt.Font("Raleway", 0, 14)); // NOI18N
+        searchBar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         searchBar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         searchBar.setBorder(null);
         searchBar.addActionListener(new java.awt.event.ActionListener() {
@@ -70,6 +70,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
             }
         });
 
+        tableBloodGroup.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         tableBloodGroup.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -83,7 +84,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tableBloodGroup);
 
-        print.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        print.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         print.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/print.png"))); // NOI18N
         print.setText("Print");
         print.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +93,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
             }
         });
 
-        close.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        close.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Exit application.png"))); // NOI18N
         close.setText("Close");
         close.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +106,6 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Search_Blood_Group, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jSeparator1)
             .addComponent(jSeparator2)
             .addComponent(jScrollPane1)
@@ -117,11 +117,12 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
                 .addComponent(searchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(185, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(150, 150, 150)
+                .addGap(205, 205, 205)
                 .addComponent(print)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(close)
-                .addGap(150, 150, 150))
+                .addGap(206, 206, 206))
+            .addComponent(Search_Blood_Group, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,7 +145,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(print, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
 
         pack();
@@ -172,7 +173,7 @@ public class SearchBloodDonorBloodGroup extends javax.swing.JFrame {
     private void searchBarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchBarKeyReleased
         // TODO add your handling code here:
         String bloodGroup = searchBar.getText();
-                try{
+        try{
             Connection con = ConnectSQL.getCon();
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("select * from donor where bloodGroup like '%"+bloodGroup+"%'");
