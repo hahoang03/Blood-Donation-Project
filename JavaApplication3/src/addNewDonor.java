@@ -52,7 +52,6 @@ public class addNewDonor extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -63,6 +62,7 @@ public class addNewDonor extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -84,7 +84,7 @@ public class addNewDonor extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel3.setText("1");
+        jLabel3.setText("11");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 112, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -140,9 +140,6 @@ public class addNewDonor extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 174, -1));
-
-        jTextField7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, 174, -1));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 382, 796, 10));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -202,6 +199,9 @@ public class addNewDonor extends javax.swing.JFrame {
         jTextField11.setText("jTextField11");
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, -1, -1));
 
+        jTextField2.setText("jTextField2");
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -229,24 +229,23 @@ public class addNewDonor extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //Get all the data entered by the user
-        String donorID=jLabel3.getText();
-        String name=jTextField1.getText();
-        String age=jTextField4.getText();
-        String gender=(String)jComboBox1.getSelectedItem();
-        String dob=jTextField7.getText();
-        String MobileNo=jTextField3.getText();
-        String registerID=jTextField9.getText();
+        String DonorID=jLabel3.getText();
+        String DonorName=jTextField1.getText();
+        String DonorAge=jTextField4.getText();
+        String DonorGender=(String)jComboBox1.getSelectedItem();
+        String DOB=jTextField7.getText();
+        String ContactNumber=jTextField3.getText();
+        String RegisterID=jTextField9.getText();
               
         // connect to SQL server
         
-
      
     
         String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
         
  
            try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
-                stmt.executeUpdate("insert into donor values('"+donorID+"','"+name+"')");
+                stmt.executeUpdate("insert into donor values('"+DonorID+"','"+DonorName+"','"+DonorGender+"','"+DonorAge+"','"+ContactNumber+"','"+DOB+"','"+RegisterID+"')");
                 JOptionPane.showMessageDialog(null,"Successfully Updated");
                 setVisible(false);
                 new addNewDonor().setVisible(true);
@@ -329,10 +328,10 @@ public class addNewDonor extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
