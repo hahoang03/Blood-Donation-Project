@@ -83,7 +83,7 @@ public class login extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/login background final.PNG"))); // NOI18N
         jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, -100, 1370, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, -100, 1380, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,7 +94,7 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(jTextField1.getText().equals("bbms") && jPasswordField1.equals("admin"))
+        if(jTextField1.getText().equals("hoangha") && jPasswordField1.getText().equals("15122003"))
         {
             setVisible(false);
             new home().setVisible(true);
