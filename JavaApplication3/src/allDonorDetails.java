@@ -126,7 +126,7 @@ public class allDonorDetails extends javax.swing.JFrame {
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
+        String connectionUrl = "jdbc:sqlserver://localhost:1434;databaseName=BloodDonation;user=sa;password=4444;encrypt=false";
 
         try {
             Connection con = DriverManager.getConnection(connectionUrl);

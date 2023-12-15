@@ -268,7 +268,7 @@ public class addNewDonor extends javax.swing.JFrame {
 
         // connect to SQL server
 
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
+        String connectionUrl = "jdbc:sqlserver://localhost:1434;databaseName=BloodDonation;user=sa;password=4444;encrypt=false";
 
         try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
             stmt.executeUpdate("insert into donor values('"+DonorID+"','"+DonorName+"','"+DonorGender+"','"+DonorAge+"','"+ContactNumber+"','"+DOB+"','"+RegisterID+"')");
