@@ -52,7 +52,7 @@ public class home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
-        setLocation(new java.awt.Point(50, 25));
+        setLocation(new java.awt.Point(50, 15));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, -1, -1));
@@ -68,8 +68,8 @@ public class home extends javax.swing.JFrame {
         jMenu1.setText("Employee");
         jMenu1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu1.setIconTextGap(25);
-        jMenu1.setMinimumSize(new java.awt.Dimension(180, 60));
-        jMenu1.setPreferredSize(new java.awt.Dimension(180, 60));
+        jMenu1.setMinimumSize(new java.awt.Dimension(170, 60));
+        jMenu1.setPreferredSize(new java.awt.Dimension(170, 60));
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

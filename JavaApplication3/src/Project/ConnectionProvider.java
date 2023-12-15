@@ -31,7 +31,7 @@ public class ConnectionProvider {
       ds.setPortNumber(port);
       
       try(Connection conn = ds.getConnection()){
-          System.out.println("Kết nối thành công");
+          System.out.println("Kết nối thành công!");
           System.out.println(conn.getCatalog());
       } catch (SQLException ex) { 
             ex.printStackTrace();
