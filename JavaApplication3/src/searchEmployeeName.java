@@ -17,12 +17,12 @@ import net.proteanit.sql.DbUtils;
  *
  * @author admin
  */
-public class searchDonorName extends javax.swing.JFrame {
+public class searchEmployeeName extends javax.swing.JFrame {
 
     /**
      * Creates new form searchDonorName
      */
-    public searchDonorName() {
+    public searchEmployeeName() {
         initComponents();
     }
 
@@ -51,8 +51,8 @@ public class searchDonorName extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
-        jLabel1.setText("Search Donor Details");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
+        jLabel1.setText("Search Employee");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 660, 10));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -91,7 +91,7 @@ public class searchDonorName extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 430, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel2.setText("DonorName");
+        jLabel2.setText("EmployeeName");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, -1, -1));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +137,7 @@ public class searchDonorName extends javax.swing.JFrame {
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
         // TODO add your handling code here:
-        String DonorName=jTextField1.getText();
+        String EmployeeName=jTextField1.getText();
         
         
          String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
@@ -145,7 +145,7 @@ public class searchDonorName extends javax.swing.JFrame {
         try {
             Connection con = DriverManager.getConnection(connectionUrl);
             Statement stmt = con.createStatement();
-            ResultSet rs=stmt.executeQuery("select*from Donor where DonorName='"+DonorName+"'");
+            ResultSet rs=stmt.executeQuery("select*from Employee where EmployeeName='"+EmployeeName+"'");
             jTable1.setAutoResizeMode(jTable1.AUTO_RESIZE_OFF);
             jTable1.setModel(DbUtils.resultSetToTableModel(rs));
         }
@@ -185,7 +185,7 @@ public class searchDonorName extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new searchDonorName().setVisible(true);
+                new searchEmployeeName().setVisible(true);
             }
         });
     }
