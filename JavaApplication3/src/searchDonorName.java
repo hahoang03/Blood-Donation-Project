@@ -56,8 +56,8 @@ public class searchDonorName extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("ADD DONOR DETAILS");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+        jLabel1.setText("SEARCH DONOR NAME");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, -1, -1));
 
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

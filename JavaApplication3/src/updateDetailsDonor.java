@@ -83,7 +83,7 @@ public class updateDetailsDonor extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/search1.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
         jButton1.setText("Search");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
