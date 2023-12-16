@@ -18,11 +18,11 @@ import java.util.logging.Logger;
 public class ConnectionProvider {
     public static void main(String[] args){
         
-      var server ="LAPTOP-UK0KLT1P\\SQLEXPRESS"  ;
+      var server ="KYPHUONG04\\SQLEXPRESS"  ;
       var user ="sa";
-      var password ="ha15122003";
+      var password ="4444";
       var db="BloodDonation";
-      var port =1433;
+      var port =1434;
       SQLServerDataSource ds = new SQLServerDataSource();
       ds.setUser(user);
       ds.setPassword(password);
@@ -31,12 +31,11 @@ public class ConnectionProvider {
       ds.setPortNumber(port);
       
       try(Connection conn = ds.getConnection()){
-          System.out.println("Kết nối thành công");
+          System.out.println("Kết nối thành công!");
           System.out.println(conn.getCatalog());
       } catch (SQLException ex) { 
             ex.printStackTrace();
         } 
-      
     }
-    }
+}
 
