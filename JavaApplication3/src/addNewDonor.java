@@ -1,11 +1,12 @@
 
 
 import javax.swing.JOptionPane;
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import Project.ConnectionProvider;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -217,7 +218,25 @@ public class addNewDonor extends javax.swing.JFrame {
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
-      
+        
+      try{
+           Connection con = ConnectionProvider.getCon();
+           Statement st = con.createStatement();
+           ResultSet rs = st.executeQuery("Select max(donorID) from donor");
+           if(rs.first())
+           {
+               int id = rs.getInt(1);
+               id = id+1;
+               String str = String.valueOf(id);
+               jLabel3.setText(str);
+           }
+           else{
+               jLabel3.setText("1");
+           }
+      }catch(Exception e){
+          e.printStackTrace();
+            JOptionPane.showMessageDialog(null,e);
+      }
     }//GEN-LAST:event_formComponentShown
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

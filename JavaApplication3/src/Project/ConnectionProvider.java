@@ -16,26 +16,18 @@ import java.util.logging.Logger;
  * @author admin
  */
 public class ConnectionProvider {
-    public static void main(String[] args){
-        
-      var server ="KYPHUONG04\\SQLEXPRESS"  ;
-      var user ="sa";
-      var password ="4444";
-      var db="BloodDonation";
-      var port =1434;
-      SQLServerDataSource ds = new SQLServerDataSource();
-      ds.setUser(user);
-      ds.setPassword(password);
-      ds.setDatabaseName(db);
-      ds.setServerName(server);
-      ds.setPortNumber(port);
-      
-      try(Connection conn = ds.getConnection()){
-          System.out.println("Kết nối thành công!");
-          System.out.println(conn.getCatalog());
-      } catch (SQLException ex) { 
-            ex.printStackTrace();
-        } 
+    public static Connection getCon(){
+       try{
+           Class.forName("com.mysql.jbdc.Driver");
+           String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
+           Connection con = DriverManager.getConnection(connectionUrl);
+           return con;
+       }
+       catch(Exception e){
+           return null;
+       }
+
+
     }
 }
 
