@@ -59,12 +59,11 @@ public class addNewDonor extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel17 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel11 = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel13 = new javax.swing.JLabel();
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/all page background image.png"))); // NOI18N
-
-        jLabel12.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\898440_OAICFB0.jpg")); // NOI18N
 
         jLabel14.setText("jLabel14");
 
@@ -82,39 +81,33 @@ public class addNewDonor extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ADD NEW DONOR");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 370, 60));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("New Donor ID:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 0, 51));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("13");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 40, 20));
+        jLabel3.setText("15");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 40, 20));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Name:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Age:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Mobile No:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, -1, 20));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Gender:");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
@@ -143,12 +136,10 @@ public class addNewDonor extends javax.swing.JFrame {
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("DOB:");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("RegisterID:");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, -1, -1));
 
@@ -161,7 +152,6 @@ public class addNewDonor extends javax.swing.JFrame {
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, 174, -1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\SAVEEE.png")); // NOI18N
         jButton1.setText("Save");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,7 +161,6 @@ public class addNewDonor extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, -1, 30));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\reset.png")); // NOI18N
         jButton2.setText("Reset");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,7 +170,6 @@ public class addNewDonor extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, -1, 30));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\X.png")); // NOI18N
         jButton3.setText("Close");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,16 +190,12 @@ public class addNewDonor extends javax.swing.JFrame {
 
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 389, 700, -1));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\love_2163269.png")); // NOI18N
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
-
-        jDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 140, -1));
-
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel11.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\898440_OAICFB0.jpg")); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, -1, -1));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/898440_OAICFB0.jpg"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 700, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -219,24 +203,8 @@ public class addNewDonor extends javax.swing.JFrame {
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
         
-      try{
-           Connection con = ConnectionProvider.getCon();
-           Statement st = con.createStatement();
-           ResultSet rs = st.executeQuery("Select max(donorID) from donor");
-           if(rs.first())
-           {
-               int id = rs.getInt(1);
-               id = id+1;
-               String str = String.valueOf(id);
-               jLabel3.setText(str);
-           }
-           else{
-               jLabel3.setText("1");
-           }
-      }catch(Exception e){
-          e.printStackTrace();
-            JOptionPane.showMessageDialog(null,e);
-      }
+       
+     
     }//GEN-LAST:event_formComponentShown
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -284,7 +252,7 @@ public class addNewDonor extends javax.swing.JFrame {
 
         // connect to SQL server
 
-        String connectionUrl = "jdbc:sqlserver://localhost:1434;databaseName=BloodDonation;user=sa;password=4444;encrypt=false";
+        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
 
         try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
             stmt.executeUpdate("insert into donor values('"+DonorID+"','"+DonorName+"','"+DonorGender+"','"+DonorAge+"','"+ContactNumber+"','"+DOB+"','"+RegisterID+"')");
@@ -345,6 +313,7 @@ public class addNewDonor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;

@@ -55,7 +55,7 @@ public class allEmployeeDetails extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         jLabel1.setText("All Employee Details");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 660, 10));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(

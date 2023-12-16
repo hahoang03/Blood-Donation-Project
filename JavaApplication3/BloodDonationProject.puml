@@ -1,0 +1,126 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class DeleteDonor
+class Project.ConnectionProvider
+class addNewDonor
+class addNewEmployee
+class addNewPatient
+class allDonorDetails
+class allEmployeeDetails
+class com.microsoft.sqlserver.jdbc.SQLServerDataSource
+class home
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.text.SimpleDateFormat
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.JTable
+class login
+class net.proteanit.sql.DbUtils
+class searchDonorName
+class searchEmployeeName
+class updateDetailsDonor
+class updateEmployeeDonor
+DeleteDonor ..> java.lang.SuppressWarnings
+DeleteDonor ..> java.sql.Connection
+DeleteDonor ..> java.sql.DriverManager
+DeleteDonor ..> java.sql.ResultSet
+DeleteDonor ..> java.sql.SQLException
+DeleteDonor ..> java.sql.Statement
+DeleteDonor --|> javax.swing.JFrame
+DeleteDonor ..> javax.swing.JOptionPane
+DeleteDonor ..> javax.swing.JTable
+DeleteDonor ..> net.proteanit.sql.DbUtils
+Project.ConnectionProvider ..> com.microsoft.sqlserver.jdbc.SQLServerDataSource
+Project.ConnectionProvider ..> java.util.logging.Level
+Project.ConnectionProvider ..> java.util.logging.Logger
+addNewDonor ..> java.lang.SuppressWarnings
+addNewDonor ..> Project.ConnectionProvider
+addNewDonor ..> java.sql.DriverManager
+addNewDonor ..> java.sql.SQLException
+addNewDonor ..> java.sql.Statement
+addNewDonor ..> java.text.SimpleDateFormat
+addNewDonor --|> javax.swing.JFrame
+addNewDonor ..> javax.swing.JOptionPane
+addNewEmployee ..> java.lang.SuppressWarnings
+addNewEmployee ..> Project.ConnectionProvider
+addNewEmployee ..> java.sql.Connection
+addNewEmployee ..> java.sql.DriverManager
+addNewEmployee ..> java.sql.SQLException
+addNewEmployee ..> java.sql.Statement
+addNewEmployee --|> javax.swing.JFrame
+addNewEmployee ..> javax.swing.JOptionPane
+addNewPatient ..> java.lang.SuppressWarnings
+addNewPatient ..> java.sql.Connection
+addNewPatient ..> java.sql.DriverManager
+addNewPatient ..> java.sql.SQLException
+addNewPatient ..> java.sql.Statement
+addNewPatient ..> java.text.SimpleDateFormat
+addNewPatient --|> javax.swing.JFrame
+addNewPatient ..> javax.swing.JOptionPane
+allDonorDetails ..> java.lang.SuppressWarnings
+allDonorDetails ..> java.sql.Connection
+allDonorDetails ..> java.sql.DriverManager
+allDonorDetails ..> java.sql.SQLException
+allDonorDetails ..> java.sql.Statement
+allDonorDetails --|> javax.swing.JFrame
+allDonorDetails ..> javax.swing.JOptionPane
+allDonorDetails ..> javax.swing.JTable
+allDonorDetails ..> net.proteanit.sql.DbUtils
+allEmployeeDetails ..> java.lang.SuppressWarnings
+allEmployeeDetails ..> java.sql.Connection
+allEmployeeDetails ..> java.sql.DriverManager
+allEmployeeDetails ..> java.sql.SQLException
+allEmployeeDetails ..> java.sql.Statement
+allEmployeeDetails --|> javax.swing.JFrame
+allEmployeeDetails ..> javax.swing.JOptionPane
+allEmployeeDetails ..> javax.swing.JTable
+allEmployeeDetails ..> net.proteanit.sql.DbUtils
+home ..> java.lang.SuppressWarnings
+home --|> javax.swing.JFrame
+home ..> javax.swing.JOptionPane
+login ..> java.lang.SuppressWarnings
+login --|> javax.swing.JFrame
+login ..> javax.swing.JOptionPane
+searchDonorName ..> java.lang.SuppressWarnings
+searchDonorName ..> java.sql.Connection
+searchDonorName ..> java.sql.DriverManager
+searchDonorName ..> java.sql.ResultSet
+searchDonorName ..> java.sql.SQLException
+searchDonorName ..> java.sql.Statement
+searchDonorName --|> javax.swing.JFrame
+searchDonorName ..> javax.swing.JOptionPane
+searchDonorName ..> javax.swing.JTable
+searchDonorName ..> net.proteanit.sql.DbUtils
+searchEmployeeName ..> java.lang.SuppressWarnings
+searchEmployeeName ..> java.sql.Connection
+searchEmployeeName ..> java.sql.DriverManager
+searchEmployeeName ..> java.sql.ResultSet
+searchEmployeeName ..> java.sql.SQLException
+searchEmployeeName ..> java.sql.Statement
+searchEmployeeName --|> javax.swing.JFrame
+searchEmployeeName ..> javax.swing.JOptionPane
+searchEmployeeName ..> javax.swing.JTable
+searchEmployeeName ..> net.proteanit.sql.DbUtils
+updateDetailsDonor ..> java.lang.SuppressWarnings
+updateDetailsDonor ..> Project.ConnectionProvider
+updateDetailsDonor ..> java.sql.Connection
+updateDetailsDonor ..> java.sql.DriverManager
+updateDetailsDonor ..> java.sql.SQLException
+updateDetailsDonor ..> java.sql.Statement
+updateDetailsDonor --|> javax.swing.JFrame
+updateDetailsDonor ..> javax.swing.JOptionPane
+updateEmployeeDonor ..> java.lang.SuppressWarnings
+updateEmployeeDonor ..> Project.ConnectionProvider
+updateEmployeeDonor ..> java.sql.Connection
+updateEmployeeDonor ..> java.sql.DriverManager
+updateEmployeeDonor ..> java.sql.SQLException
+updateEmployeeDonor ..> java.sql.Statement
+updateEmployeeDonor --|> javax.swing.JFrame
+updateEmployeeDonor ..> javax.swing.JOptionPane
+@enduml

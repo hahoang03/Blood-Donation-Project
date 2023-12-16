@@ -31,6 +31,7 @@ public class home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -62,14 +63,16 @@ public class home extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, -1, -1));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\20228510_6271988.png")); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/20228510_6271988.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jMenuBar1.setBorder(null);
         jMenuBar1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jMenu1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search_people.png")); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search_people.png"))); // NOI18N
         jMenu1.setText("Employee");
         jMenu1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu1.setIconTextGap(25);
@@ -78,7 +81,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_new.png")); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add_new.png"))); // NOI18N
         jMenuItem1.setText("Add new");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +93,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem2.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
         jMenuItem2.setText("Search ");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +104,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_people.png")); // NOI18N
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add_people.png"))); // NOI18N
         jMenu2.setText("Donor");
         jMenu2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu2.setIconTextGap(30);
@@ -110,7 +113,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_new.png")); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add_new.png"))); // NOI18N
         jMenuItem3.setText("Add new");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +125,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem4.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
         jMenuItem4.setText("Seach Donor");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,7 +140,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem5.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\DETAILSS.png")); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/DETAILSS.png"))); // NOI18N
         jMenuItem5.setText("All Donor Details");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,8 +151,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setForeground(new java.awt.Color(0, 0, 0));
-        jMenu3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\blood_2622333.png")); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blood_2622333.png"))); // NOI18N
         jMenu3.setText("Blood ");
         jMenu3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu3.setIconTextGap(20);
@@ -157,15 +159,14 @@ public class home extends javax.swing.JFrame {
         jMenu3.setPreferredSize(new java.awt.Dimension(150, 26));
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setForeground(new java.awt.Color(0, 0, 0));
-        jMenu4.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\hospital.png")); // NOI18N
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hospital.png"))); // NOI18N
         jMenu4.setText("Hospital");
         jMenu4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu4.setIconTextGap(20);
         jMenu4.setPreferredSize(new java.awt.Dimension(170, 26));
         jMenuBar1.add(jMenu4);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\patient.png")); // NOI18N
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/patient.png"))); // NOI18N
         jMenu5.setText("Patient");
         jMenu5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu5.setIconTextGap(20);
@@ -174,7 +175,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem8.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_new.png")); // NOI18N
+        jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add_new.png"))); // NOI18N
         jMenuItem8.setText("Add new ");
         jMenuItem8.setPreferredSize(new java.awt.Dimension(168, 30));
         jMenuItem8.addContainerListener(new java.awt.event.ContainerAdapter() {
@@ -192,7 +193,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem9.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
+        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
         jMenuItem9.setText("Search Patient");
         jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,7 +205,7 @@ public class home extends javax.swing.JFrame {
 
         jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jMenuItem10.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\DETAILSS.png")); // NOI18N
+        jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Details.png"))); // NOI18N
         jMenuItem10.setText("All Patient Details");
         jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,14 +216,14 @@ public class home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
-        jMenu6.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\exit-door.png")); // NOI18N
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit-door.png"))); // NOI18N
         jMenu6.setText("Exit");
         jMenu6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenu6.setIconTextGap(25);
         jMenu6.setPreferredSize(new java.awt.Dimension(150, 56));
 
         jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem6.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\sign_out.png")); // NOI18N
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sign_out.png"))); // NOI18N
         jMenuItem6.setText("Log out");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +234,7 @@ public class home extends javax.swing.JFrame {
         jMenu6.add(jSeparator4);
 
         jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem7.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\X.png")); // NOI18N
+        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/X.png"))); // NOI18N
         jMenuItem7.setText("Exit application");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,6 +352,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

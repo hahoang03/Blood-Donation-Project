@@ -4,7 +4,7 @@ import Project.ConnectionProvider;
 import javax.swing.JOptionPane;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -73,8 +73,8 @@ public class addNewEmployee extends javax.swing.JFrame {
 
         ID.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         ID.setForeground(new java.awt.Color(255, 0, 51));
-        ID.setText("14");
-        getContentPane().add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
+        ID.setText("9");
+        getContentPane().add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 30, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Name");
@@ -148,24 +148,24 @@ public class addNewEmployee extends javax.swing.JFrame {
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
-        try{
-           Connection con = ConnectionProvider.getCon();
-           Statement st = con.createStatement();
-           ResultSet rs = st.executeQuery("Select max(donorID) from donor");
+       /* String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
+
+         try (Connection con = ConnectionProvider.getCon(); Statement stmt = con.createStatement();) {
+           ResultSet rs= stmt.executeQuery("SELECT MAX(DonorID) FROM Donor");
            if(rs.first())
            {
                int id = rs.getInt(1);
-               id = id+1;
+               id += 1;
                String str = String.valueOf(id);
                ID.setText(str);
            }
            else{
                ID.setText("1");
            }
-      }catch(Exception e){
+      }catch(SQLException e){
           e.printStackTrace();
             JOptionPane.showMessageDialog(null,e);
-      }
+      }*/
       
     }//GEN-LAST:event_formComponentShown
 
@@ -198,7 +198,7 @@ public class addNewEmployee extends javax.swing.JFrame {
 
         // connect to SQL server
 
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=123;encrypt=false";
+        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
 
         try (Connection con = ConnectionProvider.getCon(); Statement stmt = con.createStatement();) {
             stmt.executeUpdate("insert into employee values('"+EmployeeID+"','"+Name+"','"+ContactNum+"','"+Job+"')");

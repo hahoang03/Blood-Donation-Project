@@ -42,7 +42,6 @@ public class addNewPatient extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jComboBox1 = new javax.swing.JComboBox<>();
         jSeparator2 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
@@ -50,6 +49,7 @@ public class addNewPatient extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(430, 130));
@@ -58,7 +58,6 @@ public class addNewPatient extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 35)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("ADD NEW PATIENT");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 30, 394, -1));
@@ -67,7 +66,6 @@ public class addNewPatient extends javax.swing.JFrame {
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 91, 700, -1));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("New Patient ID:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 112, 132, 30));
@@ -79,22 +77,18 @@ public class addNewPatient extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 115, 33, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Name:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 182, 60, 25));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Gender:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 258, 60, 25));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("DOB:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 182, 43, 25));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("RegisterID:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 258, 95, 25));
 
@@ -104,9 +98,6 @@ public class addNewPatient extends javax.swing.JFrame {
         jTextField2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 259, 141, -1));
 
-        jDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 182, 141, -1));
-
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 258, 90, 25));
@@ -115,8 +106,6 @@ public class addNewPatient extends javax.swing.JFrame {
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 339, 700, -1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\SAVEEE.png")); // NOI18N
         jButton1.setText("Save");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,8 +115,6 @@ public class addNewPatient extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 401, -1, -1));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\reset.png")); // NOI18N
         jButton2.setText("Reset");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,8 +124,6 @@ public class addNewPatient extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 400, -1, -1));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\X.png")); // NOI18N
         jButton3.setText("Close");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,13 +131,11 @@ public class addNewPatient extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 401, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\world_6312267.png")); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 70, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\898440_OAICFB0.jpg")); // NOI18N
         jLabel7.setText("jLabel7");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 500));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 700, 500));
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -166,7 +149,7 @@ public class addNewPatient extends javax.swing.JFrame {
         String DOB=dFormat.format(jDateChooser1.getDate());
         String RegisterID=jTextField2.getText();
         
-        String connectionUrl = "jdbc:sqlserver://localhost:1434;databaseName=BloodDonation;user=sa;password=4444;encrypt=false";
+        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=BloodDonation;user=sa;password=ha15122003;encrypt=false";
         
         try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
             stmt.executeUpdate("insert into patient values('"+PatientID+"','"+PatientName+"','"+PatientGender+"','"+DOB+"','"+RegisterID+"')");
