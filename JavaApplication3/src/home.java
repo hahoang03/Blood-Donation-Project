@@ -29,6 +29,8 @@ public class home extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -43,24 +45,40 @@ public class home extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jSeparator5 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jSeparator6 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem10 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jSeparator4 = new javax.swing.JPopupMenu.Separator();
         jMenuItem7 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 204, 204));
+        setBackground(new java.awt.Color(0, 0, 0));
+        setLocation(new java.awt.Point(50, 15));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-9, -180, 1610, 1040));
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\20228510_6271988.png")); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/search user.png"))); // NOI18N
+        jMenuBar1.setBorder(null);
+        jMenuBar1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jMenu1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search_people.png")); // NOI18N
         jMenu1.setText("Employee");
+        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenu1.setIconTextGap(25);
+        jMenu1.setMinimumSize(new java.awt.Dimension(170, 60));
+        jMenu1.setPreferredSize(new java.awt.Dimension(170, 60));
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_new.png")); // NOI18N
         jMenuItem1.setText("Add new");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,6 +88,9 @@ public class home extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
         jMenu1.add(jSeparator1);
 
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
         jMenuItem2.setText("Search ");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,11 +101,16 @@ public class home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donor.png"))); // NOI18N
+        jMenu2.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_people.png")); // NOI18N
         jMenu2.setText("Donor");
+        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenu2.setIconTextGap(30);
+        jMenu2.setMinimumSize(new java.awt.Dimension(160, 60));
+        jMenu2.setPreferredSize(new java.awt.Dimension(160, 60));
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Add new.png"))); // NOI18N
+        jMenuItem3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_new.png")); // NOI18N
         jMenuItem3.setText("Add new");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +121,8 @@ public class home extends javax.swing.JFrame {
         jMenu2.add(jSeparator2);
 
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/search1.png"))); // NOI18N
+        jMenuItem4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem4.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
         jMenuItem4.setText("Seach Donor");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,10 +130,14 @@ public class home extends javax.swing.JFrame {
             }
         });
         jMenu2.add(jMenuItem4);
+
+        jSeparator3.setMinimumSize(new java.awt.Dimension(111, 26));
+        jSeparator3.setPreferredSize(new java.awt.Dimension(9, 9));
         jMenu2.add(jSeparator3);
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Details.png"))); // NOI18N
+        jMenuItem5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\DETAILSS.png")); // NOI18N
         jMenuItem5.setText("All Donor Details");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,23 +148,81 @@ public class home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Blood group.png"))); // NOI18N
+        jMenu3.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu3.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\blood_2622333.png")); // NOI18N
         jMenu3.setText("Blood ");
+        jMenu3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenu3.setIconTextGap(20);
+        jMenu3.setMinimumSize(new java.awt.Dimension(150, 26));
+        jMenu3.setPreferredSize(new java.awt.Dimension(150, 26));
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Address.png"))); // NOI18N
+        jMenu4.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu4.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\hospital.png")); // NOI18N
         jMenu4.setText("Hospital");
+        jMenu4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenu4.setIconTextGap(20);
+        jMenu4.setPreferredSize(new java.awt.Dimension(170, 26));
         jMenuBar1.add(jMenu4);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stock.png"))); // NOI18N
+        jMenu5.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\patient.png")); // NOI18N
         jMenu5.setText("Patient");
+        jMenu5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenu5.setIconTextGap(20);
+        jMenu5.setMinimumSize(new java.awt.Dimension(160, 56));
+        jMenu5.setPreferredSize(new java.awt.Dimension(160, 56));
+
+        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem8.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\add_new.png")); // NOI18N
+        jMenuItem8.setText("Add new ");
+        jMenuItem8.setPreferredSize(new java.awt.Dimension(168, 30));
+        jMenuItem8.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                jMenuItem8ComponentAdded(evt);
+            }
+        });
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem8);
+        jMenu5.add(jSeparator5);
+
+        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem9.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\search.png")); // NOI18N
+        jMenuItem9.setText("Search Patient");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem9);
+        jMenu5.add(jSeparator6);
+
+        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jMenuItem10.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\DETAILSS.png")); // NOI18N
+        jMenuItem10.setText("All Patient Details");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem10);
+
         jMenuBar1.add(jMenu5);
 
-        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/exit.png"))); // NOI18N
+        jMenu6.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\exit-door.png")); // NOI18N
         jMenu6.setText("Exit");
+        jMenu6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenu6.setIconTextGap(25);
+        jMenu6.setPreferredSize(new java.awt.Dimension(150, 56));
 
         jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logout.png"))); // NOI18N
+        jMenuItem6.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\sign_out.png")); // NOI18N
         jMenuItem6.setText("Log out");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +233,7 @@ public class home extends javax.swing.JFrame {
         jMenu6.add(jSeparator4);
 
         jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit application.png"))); // NOI18N
+        jMenuItem7.setIcon(new javax.swing.ImageIcon("D:\\Blood-Donation-Project\\JavaApplication3\\src\\X.png")); // NOI18N
         jMenuItem7.setText("Exit application");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,10 +289,28 @@ public class home extends javax.swing.JFrame {
         new allDonorDetails().setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
+
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
         new searchEmployeeName().setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        // TODO add your handling code here:
+        new addNewPatient().setVisible(true);
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem8ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jMenuItem8ComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem8ComponentAdded
 
     /**
      * @param args the command line arguments
@@ -242,6 +349,8 @@ public class home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -250,15 +359,20 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator4;
+    private javax.swing.JPopupMenu.Separator jSeparator5;
+    private javax.swing.JPopupMenu.Separator jSeparator6;
     // End of variables declaration//GEN-END:variables
 }

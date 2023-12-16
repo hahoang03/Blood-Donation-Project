@@ -16,8 +16,6 @@ import java.util.logging.Logger;
  * @author admin
  */
 public class ConnectionProvider {
-    
-    
     public static Connection getCon(){
        try{
            Class.forName("com.mysql.jbdc.Driver");
@@ -28,6 +26,8 @@ public class ConnectionProvider {
        catch(Exception e){
            return null;
        }
+
+
     }
 }
 
