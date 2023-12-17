@@ -47,11 +47,11 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Agency FB" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Add New Employee"/>
+        <Property name="text" type="java.lang.String" value="ADD NEW EMPLOYEE"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="190" y="30" width="350" height="60"/>
+          <AbsoluteConstraints x="240" y="30" width="350" height="60"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -210,16 +210,15 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="jLabel13">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/all page background image.png"/>
+          <Image iconType="3" name="/images/898440_OAICFB0.jpg"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="jLabel5"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
+          <AbsoluteConstraints x="0" y="-120" width="700" height="720"/>
         </Constraint>
       </Constraints>
     </Component>
