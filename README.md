@@ -1,5 +1,5 @@
 <div id="top" align="center">
-<img src="image/Blood_Donation.png" alt="Blood_Donation">
+<img src="Blood_Donation.png" alt="Blood_Donation">
 </div>
 <!-- PROJECT LOGO -->
 <div![Blood_Donation](https://github.com/hahoang03/Blood-Donation-Project/assets/118715319/9ff801ec-154d-45cb-ad2e-212f67b03683) align="center">
@@ -60,19 +60,106 @@
 
 # HOW TO USE 🧠
 <br />
+ **LOGIN PAGE**: Require users to enter the correct account and password to log in for people who have used the system, sign up for first time users of the system, or explorer mode for system administrators
+<br />
+<div align="center">
+<img src="login.jpg" alt="login">
+</div>
+<br />
+
+ **HOME PAGE**:  The main interface of the website with Buttons include: BloodBank, Employee, Donor, Blood, Hospital, Patient to access the system components. Exit button to exit the system
+<br />
+<div align ="center">
+<img src="Blood_Donation.png" alt="Blood_Donation">
+</div>
+
+<br />
+
+**ADD NEW DONOR**: This is the Donor interface, representing a component in the system. We can add new Donors here.
+<br />
+<div align ="center">
+<img src="Add_new_donor.png" alt="Add_new_donor">
+</div>
+
+<br />
+
+**ADD NEW EMPLOYEE**: We can add new Employee here.
+<br />
+<div align ="center">
+<img src="Add_new_employee.jpg" alt="Add_new_employee">
+</div>
+
+<br />
+
+**ADD NEW PATIENT**: We can add new Patient here.
+<br />
+<div align ="center">
+<img src="Add_new_patient.jpg" alt="Add_new_patient">
+</div>
+
+<br />
+
+**All DONOR DETAILS **: This is the display of Donor details
+<br />
+<div align ="center">
+<img src="Add_donor_detail.png" alt="Add_donor_detail">
+</div>
+
+<br />
+**All EMPLOYEE DETAILS **: This is the display of Employee details
+<br />
+<div align ="center">
+<img src="Add_Employee_Detail.jpg" alt="Add_employee_detail">
+</div>
+
+<br />
+
+** SEARCH DONOR DETAILS **: Details about Donor can be found here
+<br />
+<div align ="center">
+<img src="Search_donor_detail.jpg" alt="Search_donor_detail">
+</div>
+
+<br />
+** SEARCH EMPLOYEE **: Employee can be found here
+<br />
+<div align ="center">
+<img src="Search_employee.jpg" alt="Search_employee">
+</div>
+
+<br />
+
+** UPDATE DONOR DETAILS **: Details about Donor can be update here
+<br />
+<div align ="center">
+<img src="Update_donor_detail.jpg" alt="Update_donor_detail">
+</div>
+
+<br />
+** UPDATE EMPLOYEE DETAILS **: Details about Employee can be update here
+<br />
+<div align ="center">
+<img src="Update_Employee_Detail." alt="Update_Employee_Detail">
+</div>
+
+<br />
+
+
+
+
 
 # ENTITY RELATIONSHIP DIAGRAM (ERD) 📚
 
 <br />
 <div align ="center">
-<img src="image/ERD.png" alt="ERD">
+<img src="ERD.png" alt="ERD">
 </div>
 
 <br />
 
 <br />
 <div align ="center">
-<img src="image/schema.png" alt="schema">
+<img src="Schema.png" alt="Schema">
 </div>
 <br />
 
