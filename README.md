@@ -3,9 +3,9 @@
 </div>
 <!-- PROJECT LOGO -->
 <div![Blood_Donation](https://github.com/hahoang03/Blood-Donation-Project/assets/118715319/9ff801ec-154d-45cb-ad2e-212f67b03683) align="center">
-<h1 align="center">BLOOD DONATION SYSTEM </h1>
+<h1 align="center">BLOOD DONATION MANAGEMENT SYSTEM </h1>
   <h3 align="center">
-    Blood Donation system for Principle Database of Management course <br> International University - VNU
+    Blood Donation Management system for Principle Database of Management course <br> International University - VNU
     <br />
     <br />
   </h3>
@@ -54,4 +54,94 @@
 - ERD drawing platform: [Draw.io](https://app.diagrams.net/)
 - Library: [JavaSwing](https://openjfx.io)
 - Online database storage: [ASP hosting](http://freeasphosting.net/)
+
+<!-- METHODOLOGY -->
+<br />
+
+# HOW TO USE 🧠
+<br />
+
+# ENTITY RELATIONSHIP DIAGRAM (ERD) 📚
+
+<br />
+<div align ="center">
+<img src="image/ERD.png" alt="ERD">
+</div>
+
+<br />
+
+<br />
+<div align ="center">
+<img src="image/schema.png" alt="schema">
+</div>
+<br />
+
+<br />
+
+
+
+<!-- INSTALLATION -->
+
+# INSTALLATION 💊
+
+### Required software
+
+* Java Development Kit (i.e. OpenJDK) [CLICK TO DOWNLOAD](https://openjdk.org/)
+* Any Java IDE (i.e. JetBrains Intellij IDEA) [CLICK TO DOWNLOAD](https://www.jetbrains.com/idea/download/)
+* SQL Server [CLICK TO DOWNLOAD](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
+### Steps
+
+1. Clone the repo
+   ```sh
+   git clone https://https://github.com/hahoang03/Blood-Donation-Project
+   ```
+2. Open in a Java IDE
+
+<br />
+<br />
+
+
+<!-- CONTRIBUTING -->
+
+# CONTRIBUTING 🌱
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
+contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also
+simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<br />
+<br />
+
+<!-- ACKNOWLEDGMENTS -->
+
+# ACKNOWLEDGEMENTS ❤️
+
+We want to express our sincerest thanks to our lecturer and the people who have helped us to achieve this project's goals:
+- []()	Assoc. Nguyen Thi Thuy Loan
+- []()	MSc. Nguyen Quang Phu
+- []()	The README.md template from **[othneildrew](https://github.com/othneildrew/Best-README-Template)**
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[contributors-shield]:https://img.shields.io/github/contributors/hahoang03/Blood-Donation-Project.svg?style=for-the-badge
+
+[contributors-url]: https://github.com/hahoang03/Blood-Donation-Project/graphs/contributors
+
+[forks-shield]: https://img.shields.io/github/forks/hahoang03/Blood-Donation-Project.svg?style=for-the-badge
+
+[forks-url]: https://github.com/hahoang03/Blood-Donation-Project/network/members
+
+[issues-shield]: https://img.shields.io/github/issues/hahoang03/Blood-Donation-Project.svg?style=for-the-badge
+
+[issues-url]: https://github.com/hahoang03/Blood-Donation-Project/issues
 
